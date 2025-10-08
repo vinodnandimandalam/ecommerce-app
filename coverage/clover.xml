@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1759928987919" clover="3.2.0">
+  <project timestamp="1759928987919" name="All files">
+    <metrics statements="107" coveredstatements="106" conditionals="18" coveredconditionals="13" methods="24" coveredmethods="24" elements="149" coveredelements="143" complexity="0" loc="107" ncloc="107" packages="13" files="17" classes="17"/>
+    <package name="src">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="App.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/App.tsx">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.assets">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="images.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/assets/images.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="2" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Footer">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Footer.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Footer/Footer.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Navbar">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Navbar.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Navbar/Navbar.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Product">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Product.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Product/Product.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ProductList">
+      <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+      <file name="ProductList.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/ProductList/ProductList.tsx">
+        <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="24" type="stmt"/>
+        <line num="18" count="24" type="stmt"/>
+        <line num="19" count="48" type="stmt"/>
+        <line num="22" count="24" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="26" count="24" type="stmt"/>
+        <line num="43" count="10" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.ProductList.state">
+      <metrics statements="26" coveredstatements="26" conditionals="6" coveredconditionals="3" methods="6" coveredmethods="6"/>
+      <file name="Products.slice.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/ProductList/state/Products.slice.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+      </file>
+      <file name="Products.thunk.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/ProductList/state/Products.thunk.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="12" count="15" type="stmt"/>
+        <line num="13" count="15" type="stmt"/>
+        <line num="14" count="15" type="stmt"/>
+        <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.constants">
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="constants.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/constants/constants.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="72" count="6" type="stmt"/>
+        <line num="93" count="6" type="stmt"/>
+        <line num="94" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.network">
+      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Network.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/network/Network.ts">
+        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.Home">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Home.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/pages/Home/Home.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="27" count="15" type="stmt"/>
+        <line num="66" count="25" type="stmt"/>
+        <line num="67" count="25" type="stmt"/>
+        <line num="86" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages.Shop">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Shop.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/pages/Shop/Shop.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.test-utils">
+      <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="4"/>
+      <file name="RenderRouter.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/test-utils/RenderRouter.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="6" count="8" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/test-utils/index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+      </file>
+      <file name="test-store.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/test-utils/test-store.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="13" count="36" type="stmt"/>
+      </file>
+      <file name="test-wrapper.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/test-utils/test-wrapper.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="20" count="9" type="stmt"/>
+        <line num="21" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.types">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="request-status.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/types/request-status.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="5" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
