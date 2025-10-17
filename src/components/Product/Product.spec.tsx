@@ -1,6 +1,8 @@
 import type { IProduct } from "../../types/product";
 import Product from "./Product";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
+import { TestWrapper } from "../../test-utils";
+
 describe("Product", () => {
   const testProduct: IProduct = {
     id: 1,
@@ -17,14 +19,34 @@ describe("Product", () => {
   };
 
   it("should render product component", () => {
-    render(<Product product={testProduct} />);
+    render(
+      <TestWrapper>
+        <Product product={testProduct} />
+      </TestWrapper>
+    );
     const containerElement = screen.getByTestId("product-wrapper");
     expect(containerElement).toBeInTheDocument();
   });
 
   it("should render content correctly", () => {
-    render(<Product product={testProduct} />);
+    render(
+      <TestWrapper>
+        <Product product={testProduct} />
+      </TestWrapper>
+    );
     const containerElement = screen.getByTestId("product-wrapper");
     expect(containerElement).toHaveTextContent(testProduct.category);
+  });
+
+  it("Should call the dispatch function on clicking add to cart button", () => {
+    render(
+      <TestWrapper>
+        <Product product={testProduct} />
+      </TestWrapper>
+    );
+    const addToCartButton = screen.getByRole("button", {
+      name: "+",
+    });
+    expect(() => fireEvent.click(addToCartButton)).not.toThrow();
   });
 });

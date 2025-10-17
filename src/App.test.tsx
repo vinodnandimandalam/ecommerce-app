@@ -14,6 +14,12 @@ const createMockStore = (products: IProduct[]) => {
         products: products,
         status: RequestStatus.SUCCESSFULL,
       }),
+
+      cart: () => ({
+        productsInCart: [],
+        totalPrice: 0,
+        totalQuantity: 0,
+      }),
     },
   });
 };
@@ -73,6 +79,17 @@ describe("App", () => {
     );
 
     const container = screen.getByTestId("shop-container");
+    expect(container).toBeInTheDocument();
+  });
+
+  it("Should render Cart component", () => {
+    renderWithRouter(
+      <Provider store={mockStore}>
+        <App />
+      </Provider>,
+      { route: "/cart" }
+    );
+    const container = screen.getByTestId("cart-container");
     expect(container).toBeInTheDocument();
   });
 });

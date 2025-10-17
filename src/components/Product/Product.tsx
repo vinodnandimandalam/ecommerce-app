@@ -1,7 +1,22 @@
 import { FaStar } from "react-icons/fa";
 import type { IProduct } from "../../types/product";
+import { useDispatch } from "react-redux";
+import { addProductToCart } from "../Cart/state/Cart.slice";
+import type { AppDispatch } from "../../types/state";
 
 const Product = ({ product }: { product: IProduct }) => {
+  const dispatch = useDispatch<AppDispatch>();
+
+  const handleAddToCart = () => {
+    dispatch(
+      addProductToCart({
+        id: product.id,
+        name: product.title,
+        price: product.price,
+      })
+    );
+  };
+
   return (
     <div
       data-testid="product-wrapper"
@@ -28,7 +43,10 @@ const Product = ({ product }: { product: IProduct }) => {
           {product.category}
         </span>
 
-        <button className="border-1 rounded-full px-3.5 py-0.5 bg-red-500 text-white flex items-center justify-center text-lg font-bold">
+        <button
+          className="border-1 rounded-full px-3.5 py-0.5 bg-red-500 text-white flex items-center justify-center text-lg font-bold"
+          onClick={handleAddToCart}
+        >
           +
         </button>
       </div>

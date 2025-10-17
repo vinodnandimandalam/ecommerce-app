@@ -51,7 +51,7 @@ const Home = () => {
 
       {/* Products Section  */}
       <div className="mt-8">
-        <h2 className="text-2xl font-bold mb-4">All Products</h2>
+        <h2 className="text-2xl font-bold mb-4">Top Rated Products</h2>
         <ProductList limit={5} skip={0} />
       </div>
 

@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import { FaSearch, FaUserCircle, FaShoppingCart } from "react-icons/fa";
+import { useSelector } from "react-redux";
+import type { RootState } from "../../types/state";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const { totalQuantity } = useSelector((state: RootState) => state.cart);
+  const navigate = useNavigate();
   return (
     <nav className="sticky z-50 top-0 flex-col px-4 pb-4 pt-8 shadow-md bg-white w-full">
       <div className="flex items-center w-full gap-2 md:gap-4">
@@ -22,9 +27,14 @@ const Navbar = () => {
           <FaSearch className="text-red-500 absolute right-2" />
         </form>
 
-        <button aria-label="Shopping-cart">
-          <FaShoppingCart className="text-red-500 text-2xl" />
-        </button>
+        <div className="flex items-center" data-testid="cart-count-counter">
+          <button aria-label="Shopping-cart" onClick={() => navigate("/cart")}>
+            <FaShoppingCart className="text-red-500 text-2xl" />
+          </button>
+          <span className="text-sm bg-red-500 text-white rounded-full px-2 py-1">
+            {totalQuantity}
+          </span>
+        </div>
 
         <div className="flex items-center">
           <button className="rounded-md bg-black text-white hidden md:block p-2">
