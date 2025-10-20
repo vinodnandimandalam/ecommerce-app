@@ -11,11 +11,13 @@ interface CartState {
   productsInCart: CarProduct[];
   totalPrice: number;
   totalQuantity: number;
+  address: string;
 }
 const initialState: CartState = {
   productsInCart: [],
   totalPrice: 0,
   totalQuantity: 0,
+  address: "Main street, 123",
 };
 
 export const cartSlice = createSlice({
@@ -37,7 +39,6 @@ export const cartSlice = createSlice({
     },
     increaseProductQuantity: (state, action) => {
       const { id } = action.payload;
-      console.log("increaseProductQuantity", id);
       const existingProduct = state.productsInCart.find(
         (product) => product.id === id
       );
@@ -72,6 +73,14 @@ export const cartSlice = createSlice({
         (product) => product.id !== id
       );
     },
+    clearProuctsFromCart: (state) => {
+      state.productsInCart = [];
+      state.totalPrice = 0;
+      state.totalQuantity = 0;
+    },
+    setAddress: (state, action) => {
+      state.address = action.payload;
+    },
   },
 });
 
@@ -81,4 +90,6 @@ export const {
   increaseProductQuantity,
   decreaseProductQuantity,
   removeProductFromCart,
+  setAddress,
+  clearProuctsFromCart,
 } = cartSlice.actions;

@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <div className="flex items-center" data-testid="cart-count-counter">
           <button aria-label="Shopping-cart" onClick={() => navigate("/cart")}>
-            <FaShoppingCart className="text-red-500 text-2xl" />
+            <FaShoppingCart className="text-red-500 text-2xl cursor-pointer" />
           </button>
           <span className="text-sm bg-red-500 text-white rounded-full px-2 py-1">
             {totalQuantity}

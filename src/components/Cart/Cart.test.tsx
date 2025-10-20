@@ -1,8 +1,9 @@
 import Cart from "./Cart";
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import { cartSlice, type CarProduct } from "./state/Cart.slice";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
+import { renderWithRouter } from "../Navbar/Navbar.test";
 
 // render list of products in cart
 
@@ -43,7 +44,7 @@ describe("Cart", () => {
   const mockStore = createMockStore(testProductsInCart);
 
   it("should render Cart component", () => {
-    render(
+    renderWithRouter(
       <Provider store={mockStore}>
         <Cart />
       </Provider>
@@ -53,7 +54,7 @@ describe("Cart", () => {
   });
 
   it("Should render the list of products in cart", () => {
-    render(
+    renderWithRouter(
       <Provider store={mockStore}>
         <Cart />
       </Provider>

@@ -44,7 +44,7 @@ const Product = ({ product }: { product: IProduct }) => {
         </span>
 
         <button
-          className="border-1 rounded-full px-3.5 py-0.5 bg-red-500 text-white flex items-center justify-center text-lg font-bold"
+          className="border-1 rounded-full px-3.5 py-0.5 bg-red-500 text-white flex items-center justify-center text-lg font-bold cursor-pointer"
           onClick={handleAddToCart}
         >
           +

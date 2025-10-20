@@ -55,15 +55,19 @@ const CartProduct = ({ cartProduct }: { cartProduct: CarProduct }) => {
       <div className="flex items-center gap-3">
         <p>{`$ ${currentProductDetails?.price}`}</p>
 
-        <div className="flex items-center border-1 border-gray-300 rounded-sm p-2 m-2">
+        <div className="flex items-center border-1 border-gray-300 rounded-sm p-2 m-2 cursor-pointer">
           <button onClick={handleIncreaseQuantity}>+</button>
-          <p className="text-sm font-semibold mx-2">{`Quantity: ${cartProduct.quantity}`}</p>
+          <p className="text-sm font-semibold mx-2 cursor-pointer">{`Quantity: ${cartProduct.quantity}`}</p>
           <button onClick={handleDecreaseQuantity}>-</button>
         </div>
         <p>{`$ ${(cartProduct.price * cartProduct.quantity).toFixed(2)}`}</p>
       </div>
 
-      <button onClick={handleRemoveFromCart} aria-label="Remove from cart">
+      <button
+        onClick={handleRemoveFromCart}
+        aria-label="Remove from cart"
+        className="cursor-pointer"
+      >
         <FaTrash className="text-red-500" />
       </button>
     </div>

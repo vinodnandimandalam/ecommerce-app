@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
-const renderWithRouter = (ui: React.ReactNode, { route = "/" } = {}) => {
+export const renderWithRouter = (ui: React.ReactNode, { route = "/" } = {}) => {
   window.history.pushState({}, "Test page", route);
   return render(ui, { wrapper: BrowserRouter });
 };
