@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1760002723046" clover="3.2.0">
-  <project timestamp="1760002723046" name="All files">
-    <metrics statements="108" coveredstatements="107" conditionals="18" coveredconditionals="13" methods="24" coveredmethods="24" elements="150" coveredelements="144" complexity="0" loc="108" ncloc="108" packages="13" files="17" classes="17"/>
+<coverage generated="1761138562811" clover="3.2.0">
+  <project timestamp="1761138562811" name="All files">
+    <metrics statements="317" coveredstatements="253" conditionals="166" coveredconditionals="110" methods="73" coveredmethods="53" elements="556" coveredelements="416" complexity="0" loc="317" ncloc="317" packages="20" files="24" classes="24"/>
     <package name="src">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/App.tsx">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.assets">
@@ -25,35 +27,223 @@
         <line num="5" count="6" type="stmt"/>
       </file>
     </package>
+    <package name="src.components.Cart">
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="Cart.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Cart/Cart.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Cart.state">
+      <metrics statements="39" coveredstatements="20" conditionals="37" coveredconditionals="14" methods="11" coveredmethods="5"/>
+      <file name="Cart.slice.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Cart/state/Cart.slice.ts">
+        <metrics statements="39" coveredstatements="20" conditionals="37" coveredconditionals="14" methods="11" coveredmethods="5"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="16" count="9" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="45" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="48" count="2" type="cond" truecount="4" falsecount="2"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="56" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="59" count="0" type="cond" truecount="0" falsecount="6"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="67" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="70" count="1" type="cond" truecount="4" falsecount="2"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="87" count="9" type="stmt"/>
+        <line num="88" count="9" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.CartProduct">
+      <metrics statements="18" coveredstatements="17" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="5"/>
+      <file name="CartProduct.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/CartProduct/CartProduct.tsx">
+        <metrics statements="18" coveredstatements="17" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="5"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="18" count="17" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="7" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="7" type="stmt"/>
+        <line num="77" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.CartTotal">
+      <metrics statements="23" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="2"/>
+      <file name="CartTotal.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/CartTotal/CartTotal.tsx">
+        <metrics statements="23" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="2"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="41" count="6" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="82" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Checkout">
+      <metrics statements="52" coveredstatements="18" conditionals="22" coveredconditionals="0" methods="10" coveredmethods="3"/>
+      <file name="Checkout.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Checkout/Checkout.tsx">
+        <metrics statements="52" coveredstatements="18" conditionals="22" coveredconditionals="0" methods="10" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="14" type="stmt"/>
+        <line num="21" count="7" type="stmt"/>
+        <line num="22" count="7" type="stmt"/>
+        <line num="23" count="7" type="stmt"/>
+        <line num="32" count="7" type="stmt"/>
+        <line num="42" count="42" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="51" count="7" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="62" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="67" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="74" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="78" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="84" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="89" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="94" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="96" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="106" count="7" type="stmt"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="109" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="118" count="7" type="stmt"/>
+        <line num="119" count="0" type="stmt"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="137" count="7" type="stmt"/>
+        <line num="272" count="2" type="stmt"/>
+      </file>
+    </package>
     <package name="src.components.Footer">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Footer.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Footer/Footer.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
-        <line num="4" count="4" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Navbar">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="17" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
       <file name="Navbar.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Navbar/Navbar.tsx">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="12" type="stmt"/>
-        <line num="64" count="2" type="stmt"/>
+        <metrics statements="17" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="102" type="stmt"/>
+        <line num="9" count="51" type="stmt"/>
+        <line num="10" count="51" type="stmt"/>
+        <line num="13" count="51" type="stmt"/>
+        <line num="14" count="204" type="stmt"/>
+        <line num="18" count="51" type="stmt"/>
+        <line num="19" count="204" type="stmt"/>
+        <line num="20" count="204" type="stmt"/>
+        <line num="22" count="204" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="51" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="80" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Product">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Product.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/Product/Product.tsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
         <line num="4" count="5" type="stmt"/>
-        <line num="5" count="12" type="stmt"/>
-        <line num="39" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="10" count="13" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="20" count="13" type="stmt"/>
+        <line num="57" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.components.ProductList">
@@ -109,6 +299,67 @@
         <line num="18" count="1" type="stmt"/>
         <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="24" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.modal">
+      <metrics statements="10" coveredstatements="10" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3"/>
+      <file name="Modal.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/modal/Modal.tsx">
+        <metrics statements="10" coveredstatements="10" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="22" count="15" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="27" count="15" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="15" type="stmt"/>
+        <line num="92" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.text-input">
+      <metrics statements="39" coveredstatements="37" conditionals="51" coveredconditionals="46" methods="4" coveredmethods="4"/>
+      <file name="TextInput.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/components/text-input/TextInput.tsx">
+        <metrics statements="39" coveredstatements="37" conditionals="51" coveredconditionals="46" methods="4" coveredmethods="4"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="32" count="99" type="stmt"/>
+        <line num="35" count="99" type="stmt"/>
+        <line num="37" count="22" type="stmt"/>
+        <line num="40" count="22" type="cond" truecount="1" falsecount="1"/>
+        <line num="43" count="22" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="45" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="6" type="stmt"/>
+        <line num="47" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="9" type="stmt"/>
+        <line num="51" count="1" type="cond" truecount="3" falsecount="1"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="66" count="99" type="stmt"/>
+        <line num="68" count="33" type="stmt"/>
+        <line num="71" count="33" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="21" type="stmt"/>
+        <line num="76" count="33" type="stmt"/>
+        <line num="79" count="33" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="4" type="stmt"/>
+        <line num="86" count="99" type="stmt"/>
+        <line num="89" count="34" type="cond" truecount="4" falsecount="0"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="91" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="94" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="99" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="100" count="0" type="stmt"/>
+        <line num="109" count="99" type="cond" truecount="2" falsecount="0"/>
+        <line num="112" count="99" type="cond" truecount="2" falsecount="0"/>
+        <line num="115" count="99" type="cond" truecount="2" falsecount="0"/>
+        <line num="118" count="99" type="stmt"/>
+        <line num="127" count="99" type="stmt"/>
+        <line num="166" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.constants">
@@ -167,37 +418,37 @@
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="5" count="8" type="stmt"/>
-        <line num="6" count="8" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
       </file>
       <file name="index.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/test-utils/index.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
+        <line num="2" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
       </file>
       <file name="test-store.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/test-utils/test-store.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
-        <line num="13" count="36" type="stmt"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="11" count="17" type="stmt"/>
+        <line num="13" count="61" type="stmt"/>
       </file>
       <file name="test-wrapper.tsx" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/test-utils/test-wrapper.tsx">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="20" count="9" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="20" count="17" type="stmt"/>
+        <line num="21" count="17" type="stmt"/>
       </file>
     </package>
     <package name="src.types">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="request-status.ts" path="/Users/vinodkumarnandimandalam/Documents/learnings/ecommerce-app/src/types/request-status.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
+        <line num="1" count="7" type="stmt"/>
       </file>
     </package>
   </project>

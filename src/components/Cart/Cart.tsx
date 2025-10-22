@@ -22,15 +22,15 @@ const Cart = () => {
         ))}
       </div>
 
-      <div className="w-full md:w-1/3">
-        {/* Cart Total  */}
-        <h2 className="text-2xl font-bold m-4">Cart Total</h2>
-        {productsInCart.length > 0 ? (
+      {productsInCart.length > 0 ? (
+        <div className="w-full md:w-1/3">
+          {/* Cart Total  */}
+          <h2 className="text-2xl font-bold m-4">Cart Total</h2>
           <CartTotal />
-        ) : (
-          <div>No products in cart</div>
-        )}
-      </div>
+        </div>
+      ) : (
+        <div>No products in cart</div>
+      )}
     </div>
   );
 };

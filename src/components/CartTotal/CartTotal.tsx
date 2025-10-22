@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "../../types/state";
 import { useState } from "react";
 import Modal from "../modal/Modal";
-import { setAddress, clearProuctsFromCart } from "../Cart/state/Cart.slice";
+import { setAddress } from "../Cart/state/Cart.slice";
 import { useNavigate } from "react-router-dom";
 
 const CartTotal = () => {
@@ -18,9 +18,7 @@ const CartTotal = () => {
   const [showAddressModal, setShowAddressModal] = useState(false);
 
   const handleCheckOut = () => {
-    alert("hurray! order placed");
-    dispatch(clearProuctsFromCart());
-    navigate("/");
+    navigate("/checkout");
   };
 
   const renderChangeInputField = () => {

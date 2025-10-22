@@ -95,7 +95,7 @@ describe("Navbar", () => {
         </Provider>
       );
       const loginSignupButton = screen.getByRole("button", {
-        name: /login\/signup/i,
+        name: /login\s*\/\s*signup/i,
       });
       expect(loginSignupButton).toBeInTheDocument();
     });
