@@ -13,13 +13,12 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "predeploy": "npm run build",
-    "deploy": "gp-pages -d dist"
+    "deploy": "npx gh-pages -d dist -b gh-pages-deploy"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
     "@tailwindcss/vite": "^4.1.14",
     "axios": "^1.12.2",
-    "gh-pages": "^6.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
@@ -44,6 +43,7 @@
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
+    "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
