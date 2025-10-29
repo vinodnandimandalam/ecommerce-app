@@ -3,7 +3,7 @@ name: Deploy React + Vite to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - development
 
 permissions:
   contents: write
@@ -20,6 +20,16 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Merge development into main
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git fetch origin main development
+          git checkout main
+          # Try a non-interactive merge; fail the job on conflicts
+          git merge --no-edit origin/development
+          git push origin main
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -35,6 +45,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           enable_jekyll: false
